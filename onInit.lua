@@ -1,5 +1,6 @@
 --Size (width) depending on talent setup
 --Total space available : 184px, regular divides by 5, ascension divides by 6
+--That asumption does not work precisely due to edges and offsets
 aura_env.regularChiSize = 36.8
 aura_env.ascensionChiSize = 30.6
 
