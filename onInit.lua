@@ -10,6 +10,7 @@ aura_env.update = function()
   aura_env.width = aura_env.ascension and aura_env.ascensionChiSize or aura_env.regularChiSize
 end
 
+--Returns the number of chi player has
 aura_env.getChi = function()
   return UnitPower("player", SPELL_POWER_CHI) 
 end

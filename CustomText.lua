@@ -1,7 +1,8 @@
 function()
     --local region = WeakAuras.GetRegion(aura, state)  
     aura_env.update()    
-    aura_env.chis = aura_env.getChi()    
+    aura_env.chis = aura_env.getChi()
+    --Using another existing region to anchor
     local energy = aura_env.getRegion("Energy Bar")
     local yoffset = 1
     
@@ -31,7 +32,8 @@ function()
     chi5:SetWidth(aura_env.width)    
     chi5:SetPoint("LEFT", chi4, "RIGHT", aura_env.offset, 0)
     --aura_env.setColour(cp2, 2)  
-         
+     
+    --When ascension is taken, chi6 is used
     if select(4, GetTalentInfo(3,2,1)) then
             chi6:SetWidth(aura_env.width)    
             chi6:SetPoint("LEFT", chi5, "RIGHT", aura_env.offset, 0)
